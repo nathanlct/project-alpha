@@ -9,7 +9,8 @@
 bool RAND_SEED_INITIALIZED = false;
 
 // euclidean distance between two points
-float dist(sf::Vector2f p1, sf::Vector2f p2) {
+template <class T>
+float dist(sf::Vector2<T> p1, sf::Vector2<T> p2) {
     auto delta = p1 - p2;
     return sqrt(delta.x * delta.x + delta.y * delta.y);
 }

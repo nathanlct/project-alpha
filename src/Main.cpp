@@ -3,6 +3,7 @@
 
 
 #include "Game.hpp"
+#include "GameMaze.hpp"
 
 int main() {
     bool render = true; // whether or not to display the game window
